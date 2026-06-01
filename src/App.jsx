@@ -123,7 +123,7 @@ const Orquestador = () => {
   const [requisitos, setRequisitos] = useState([]);
   const [titulo, setTitulo] = useState('');
   const [descripcion, setDescripcion] = useState('');
-  const [selectedIA, setSelectedIA] = useState('deepseek');
+  const [selectedIA, setSelectedIA] = useState('deepseek-chat');
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -262,11 +262,10 @@ const Orquestador = () => {
                 onChange={(e) => setSelectedIA(e.target.value)}
                 style={{ padding: '8px', borderRadius: '8px', backgroundColor: '#334155', color: 'white', border: 'none' }}
               >
-                <option value="deepseek">DeepSeek</option>
-                <option value="kimi">Kimi</option>
-                <option value="gemini">Gemini</option>
-                <option value="mistral">Mistral</option>
-                <option value="antigravity">Antigravity</option>
+                <option value="deepseek-chat">DeepSeek</option>
+<option value="qwen-turbo">Qwen Turbo</option>
+<option value="kimi-k2">Kimi K2</option>
+<option value="groq-llama">Groq Llama 3.3</option>
               </select>
             </div>
             <button
